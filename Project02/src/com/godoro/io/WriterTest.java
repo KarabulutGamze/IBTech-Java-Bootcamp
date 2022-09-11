@@ -6,7 +6,7 @@ import java.io.FileWriter;
 
 public class WriterTest {
 	public static void main(String[] args) throws Exception {
-		String path="C:\\Users\\karab\\OneDrive\\Documents\\GitHub\\IBTech-Java-Bootcamp\\IBTech-Java-Bootcamp\\out.txt";
+		String path="C:\\Users\\karab\\out.txt";
 		
 		BufferedWriter bw=new BufferedWriter(new FileWriter(path));
 		bw.write("Java\r\n");

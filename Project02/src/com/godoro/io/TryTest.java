@@ -7,7 +7,7 @@ import java.io.IOException;
 public class TryTest {
 	public static void main(String[] args) {
 		
-		String path="C:\\Users\\karab\\in.txt";
+		String path="C:\\Users\\karab\\out.txt";
 		BufferedWriter bw=null;
 		
 		try {

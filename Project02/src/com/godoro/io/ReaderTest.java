@@ -5,7 +5,7 @@ import java.io.FileReader;
 
 public class ReaderTest {
 	public static void main(String[] args) throws Exception {
-		String path="C:\\Users\\karab\\in.txt";
+		String path="C:\\Users\\karab\\in.txt"; 
 		
 		BufferedReader br=new BufferedReader(new FileReader(path));
 		String line=null;
