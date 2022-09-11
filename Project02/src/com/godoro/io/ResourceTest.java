@@ -5,7 +5,7 @@ import java.io.FileWriter;
 
 public class ResourceTest {
 	public static void main(String[] args) throws Exception {
-		String path="C\\";
+		String path="C:\\Users\\karab\\out.txt";
 		try(BufferedWriter bw=new BufferedWriter(new FileWriter(path))){
 				bw.write("Java\r\n");
 				bw.write("JDBC\r\n");
