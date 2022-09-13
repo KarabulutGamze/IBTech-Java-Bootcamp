@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class TestFind {
+public class TestAggregate {
 	
 	  public static void main(String[] args) throws Exception {
 			
@@ -17,16 +17,12 @@ public class TestFind {
 			
 			Connection connection = DriverManager.getConnection(url,user,password);
 		
-			String sql="select * from Product where productId=?";
+			String sql="select avg(salesPrice) as averagePrice from Product";
 			PreparedStatement statement = connection.prepareStatement(sql);
-			statement.setLong(1, 2);
 			ResultSet resultSet=statement.executeQuery();
-			if(resultSet.next()) {
-				long productId=resultSet.getLong("productId");
-				String productName=resultSet.getString("productName");	
-				double salesPrice=resultSet.getDouble("salesPrice");
-				System.out.println(productId+" "+productName+" "+salesPrice);
-
+			if(resultSet.next()) {	
+				double averagePrice=resultSet.getDouble("averagePrice");
+				System.out.println("Ortalama Eder:" + averagePrice);
 			}
 
 			connection.close();
