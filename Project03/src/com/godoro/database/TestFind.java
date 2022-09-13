@@ -11,7 +11,7 @@ public class TestFind {
 			
 			String url = "jdbc:postgresql://localhost/dbgodoro";
 			String user = "postgres";
-			String password = "gamze1999";
+			String password = "987654";
 			String driver="org.postgresql.Driver";
 			Class.forName(driver);
 			
