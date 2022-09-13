@@ -9,7 +9,7 @@ public class TestFind {
 	
 	  public static void main(String[] args) throws Exception {
 			
-			String url = "jdbc:postgresql://localhost/postgres";
+			String url = "jdbc:postgresql://localhost/dbgodoro";
 			String user = "postgres";
 			String password = "gamze1999";
 			String driver="org.postgresql.Driver";
